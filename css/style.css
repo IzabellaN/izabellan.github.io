@@ -1,0 +1,225 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.basket{
+	width:100px ;
+	height: 100px;
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	display: none;
+}
+.basket-icon{
+	font-size: 42px;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	box-shadow: 2px 4px 6px grey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.all-count-container{
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	position: fixed;
+	right: 80px;
+	top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+}
+.all-price-container{
+	width: auto;
+	padding: 10px;
+	height: auto;
+	background-color: rgb(80, 78, 78);
+	color: white;
+	position: fixed;
+	top: 80px;
+	right:170px ;
+	border-radius:8px ;
+	display: none;
+}
+
+.basket:hover .all-price-container{
+	display: block;
+}
+
+
+
+
+
+#roll{
+	padding:100px ;
+}
+.roll-container{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.product{
+	width: 28%;
+	height: auto;
+	text-align: center;
+	border: 1px solid black;
+	margin: 10px;
+}
+.productImg{
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+}
+.productInfo{
+	padding: 20px;
+}
+
+.orderBtn,
+.orderBigBtn{
+	margin: 20px;
+	padding: 10px 40px;
+	color: white;
+	background-color:#ff6047 ;
+	border:none;
+	border-radius: 8px;
+	font-size: 18px;
+
+}
+.productInfo p{
+	margin:10px ;
+	color:grey;
+}
+.productBig{
+	width: 100%;
+	height:100% ;
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left:0;
+	background-color: white;
+	padding: 100px;
+	display: none;
+
+}
+.product-big-container{
+	width: 100%;
+	height: auto;
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+.back{
+	position: fixed;
+	left:10px;
+	top: 10px;
+	cursor: pointer;
+}
+.close{
+	position: fixed;
+	right: 30px;
+	top: 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.order-container{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: none;
+	overflow-y: auto;
+}
+.order{
+	width: 35%;
+	height: auto;
+	background-color: white;
+	padding: 20px;
+	margin: 50px auto;
+}
+input{
+	width: 100%;
+	padding: 18px;
+	font-size: 18px;
+	margin: 10px 0;
+}
+.orders{
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 20px;
+	margin: 20px 0;
+}
+.result{
+	text-align: right;
+	margin: 30px 0;
+}
+input[type="submit"]{
+	background-color: black;
+	color: white;
+}
+.show{
+	display: block;
+}
+.productBigImg{
+	width:50% ;
+	height:500px ;
+	background-size: cover;
+	background-position: center center;
+}
+.productBigText{
+	width: 50%;
+	padding: 50px;
+	font-size: 20px;
+}
+.productBigText>*{
+	margin: 10px;
+}
+.orderSmallImg{
+		width: 100px;
+		height: 100px;
+		background-size: cover;
+		background-position: center center;
+}
+
+
+
+.orderSmall{
+	display: flex ;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5px;
+}
+.plus,
+.minus,
+.remove{
+	border: 1px solid black;
+	background-color: transparent;
+	cursor: pointer;
+	border-radius: 50%;
+	width:20px ;
+	height:20px ;
+	font-size: 18px;
+}
+.orderSmallInfo{
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+
+}
+.rollName{
+	width: 40%;
+}
